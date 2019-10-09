@@ -6,11 +6,18 @@ public class Employee extends Person {
     private double salary;
     private static int employeeCounter;
 
+    Employee(String name, byte age, double salary) {
+        super(name,age);
+        this.idEmployee = employeeCounter++;
+        this.salary = salary;
+    }
+
     Employee(String name, double salary) {
         super(name);
         this.idEmployee = employeeCounter++;
         this.salary = salary;
     }
+
     //super, manda a llamar algun metodo o atributo de la clase padre
     public int getIdEmployee() {
         return idEmployee;
@@ -26,6 +33,11 @@ public class Employee extends Person {
 
     public void setSalary(double salary) {
         this.salary = salary;
+    }
+
+    public String getDetails(){
+        //return " Name = " + getName() + "  Age = " + getAge() + "  Salary = " + getSalary();
+        return super.getDetails() + " Salary = "+getSalary();
     }
 
     //get the object state

@@ -17,8 +17,11 @@ public class Person {
         this.address = address;
     }
 
-    Person(String name) {
+    Person(String name) { this.name = name; }
+
+    Person(String name, byte age) {
         this.name = name;
+        this.age = age;
     }
 
     public String getName() {
@@ -47,6 +50,10 @@ public class Person {
 
     void setAddress(String address) {
         this.address = address;
+    }
+
+    public String getDetails(){
+        return "Nombre : " + name + " Edad : " + age;
     }
 
     //Over-write a method from the parent class, as there is not extends (in this case) the parent class is object
