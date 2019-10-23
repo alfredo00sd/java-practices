@@ -1,0 +1,9 @@
+Tipos de excepciones en el api de java
+
+checkExceptions
+--Heredan de la clase exception.
+Ex. SqlException
+
+unCheckExceptions (surgen en runTime)
+--heredan de la clase exception aunque no es obligatorio ponerlas en un try catch
+Ex. nullPointerException

@@ -1,0 +1,13 @@
+Beans are pure java classes (if fallow the rules), can use a class with other class without have to know
+everything about the class content.
+
+other framework or class can use the bean.
+
+Rules
+1- a empty constructor.
+2- private attributes.
+3- getters and setters for each property... if is need (if is write only (set) if is read only (get))
+4- implements the java interface serializable import java.io.serializable...
+    has not methods but allows to serialize objects (convert the in 0s and 1s).
+
+Java enterprise beans ... run on server... and are complex.
