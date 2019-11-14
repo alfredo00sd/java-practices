@@ -1,5 +1,6 @@
 package programacion.interfaces.datos;
-                                    //Can implement multiple interfaces but extends just one
+
+//Can implement multiple interfaces but extends just one
 public class ImplementacionOracle implements AccesoDatos {
 
     //implementation of the Data Access interface
@@ -12,5 +13,4 @@ public class ImplementacionOracle implements AccesoDatos {
     public void list(){
         System.out.println("Listing records from Oracle DB...");
     }
-
 }

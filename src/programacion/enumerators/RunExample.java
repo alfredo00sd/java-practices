@@ -4,8 +4,13 @@ public class RunExample {
     public static void main(String[] args) {
 
         //System.out.println(" Day : "+Dias.THURSDAY + "\n" + checkDay(Dias.THURSDAY));
-        System.out.println(checkCountriesInContinent(Continents.AFRICA));
+        //System.out.println(checkCountriesInContinent(Continents.AFRICA));
+        FreshJuice juice = new FreshJuice();
+        juice.size = FreshJuice.FreshJuiceSize.Medium;
+        System.out.println("Size is: "+juice.size);
     }
+
+
 
     private static String checkCountriesInContinent(Continents continents){
         String msg;

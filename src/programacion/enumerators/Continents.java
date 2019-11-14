@@ -18,3 +18,8 @@ public enum Continents {
         return countries;
     }
 }
+
+class FreshJuice{
+    enum FreshJuiceSize{ Small, Medium, Large }
+    FreshJuiceSize size;
+}
